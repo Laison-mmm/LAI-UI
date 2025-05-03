@@ -1,8 +1,25 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(.*)\\.jpg",
       "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/jpeg"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.png",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
